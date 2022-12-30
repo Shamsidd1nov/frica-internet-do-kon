@@ -153,42 +153,19 @@
       <div class="catagary_section_2">
          <div class="container-fluid">
             <div class="row">
+                @foreach($posts as $post)
                <div class="col-md-4">
                   <div class="box_man">
-                     <h3 class="mobile_text">Mobile</h3>
+                     <h3 class="mobile_text">{{$post->product}}</h3>
                      <div class="mobile_img"><img src="{{asset('temp/images/mobile-img.png')}}"></div>
                      <div class="cart_main">
                         <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                        <h4 class="samsung_text">Samsung</h4>
-                        <h6 class="rate_text"><a href="#">$500</a></h6>
-                        <h6 class="rate_text_1">$1000</h6>
+                        <h4 class="samsung_text">{{$post->model}}</h4>
+                        <h6 class="rate_text"><a href="#">{{$post->price}}</a></h6>
                      </div>
                   </div>
                </div>
-               <div class="col-md-4">
-                  <div class="box_man">
-                     <h3 class="mobile_text">Watch</h3>
-                     <div class="watch_img"><img src="{{asset('temp/images/watch-img.png')}}"></div>
-                     <div class="cart_main">
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                        <h4 class="samsung_text">Samsung</h4>
-                        <h6 class="rate_text"><a href="#">$500</a></h6>
-                        <h6 class="rate_text_1">$1000</h6>
-                     </div>
-                  </div>
-               </div>
-               <div class="col-md-4">
-                  <div class="box_man">
-                     <h3 class="mobile_text">Camera</h3>
-                     <div class="camera_img"><img src="{{asset('temp/images/camera-img.png')}}"></div>
-                     <div class="cart_main">
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
-                        <h4 class="samsung_text">Samsung</h4>
-                        <h6 class="rate_text"><a href="#">$500</a></h6>
-                        <h6 class="rate_text_1">$1000</h6>
-                     </div>
-                  </div>
-               </div>
+               @endforeach
             </div>
          </div>
       </div>
