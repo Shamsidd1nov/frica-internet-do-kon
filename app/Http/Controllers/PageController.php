@@ -11,6 +11,6 @@ class PageController extends Controller
     public function getPost(){
         $post = Post::get();
 
-        return view('welcome', ['posts' => $post]);
+        return view('welcome', ['phones' => $post]);
     }
 }

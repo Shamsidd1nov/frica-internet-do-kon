@@ -136,9 +136,6 @@
                <div class="catagary_right">
                   <div class="catagary_menu">
                      <ul>
-                        <li><a href="#">Man's Fashion</a></li>
-                        <li><a href="#">Woman Fashion</a></li>
-                        <li><a href="#">Beauty</a></li>
                         <li><a href="#">Mobiles</a></li>
                         <li><a href="#">Computers</a></li>
                         <li><a href="#">Watchs</a></li>
@@ -159,7 +156,7 @@
                      <h3 class="mobile_text">{{$post->product}}</h3>
                      <div class="mobile_img"><img src="{{asset('temp/images/mobile-img.png')}}"></div>
                      <div class="cart_main">
-                        <div class="cart_bt"><a href="#">Add To Cart</a></div>
+                        <div class="cart_bt"><a href="{{$post->model}}">Add To Cart</a></div>
                         <h4 class="samsung_text">{{$post->model}}</h4>
                         <h6 class="rate_text"><a href="#">{{$post->price}}</a></h6>
                      </div>
